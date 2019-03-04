@@ -15,11 +15,10 @@ action "Build" {
 }
 
 action "Deploy" {
-  needs = "build"
   uses = "w9jds/firebase-action@master"
-  args = "deploy"
+  args = "deploy --only hosting"
   env = {
-      PROJECT_ID = "fir-hosting-a44ed"
+    PROJECT_ID = "fir-hosting-a44ed"
   }
   secrets = ["FIREBASE_TOKEN"]
 }
