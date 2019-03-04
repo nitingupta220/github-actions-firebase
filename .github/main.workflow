@@ -21,5 +21,5 @@ action "Deploy" {
   env = {
       PROJECT_ID = "fir-hosting-a44ed"
   }
-  secrets = ["1/useMJEAzv_rymP6Fd_tUAUwpzy7V-iQ_l5sLnDLe3vA"]
+  secrets = ["FIREBASE_TOKEN"]
 }
