@@ -1,0 +1,7 @@
+import firebase from 'firebase';
+export const initializeFirebase = () => {
+  firebase.initializeApp({
+    // taken from your project settings --> cloud messaging
+    messagingSenderId: "BGm4TLssK12bwIAD5pQsz35PfUgtAXyb5vVu7wjpA3Zu6OPzRRdKPHjh2EyZqqS26Qj7rZUszYP_Pko_KB-Tgps"
+  });
+}
